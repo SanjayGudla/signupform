@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-desktop.png");
+    font-family:'Poppins';
+    color: white;
+    overflow: hidden;
+}
+
+.container{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     max-width: 1200px;
+     margin:0 auto;
+     padding: 20px;
+     min-height: 100vh;
+}
+
+.left{
+    flex:1;
+    padding: 0 20px;
+}
+
+.left h1{
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.left p{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+
+.right{
+    flex:1;
+    padding: 0 20px;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+    padding:30px;
+    box-shadow:0 6px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.free{
+    color:white;
+    background:hsl(248, 32%, 49%);
+    font-family:'Poppins';
+    padding: 20px;
+}
+
+.free span{
+    color:hsl(246,25%,77%);
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius:5px;
+    border: 1px solid rgb(204, 203, 203);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "poppins";
+}
+
+input:focus{
+    border:1px solid rgb(126, 124, 124);
+    outline:none;
+}
+
+
+button{
+    background-color: hsl(154,59%,51%);
+    border: hsl(154,59%,45%);
+    border-bottom-width: 3px;
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    border-radius:5px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "poppins";
+    color:white;
+    border: none;
+    text-transform: uppercase;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0 3px hsl(154,59%,45%);
+    transform: translateY(2px);
+}
+
+.section p{
+    color: #aaa;
+    font-size:11px;
+    font-weight: 500;
+    text-align: center;
+}
+.section p a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom:20px;
+}
+
+.form-control img{
+    position:absolute;
+    top:15px;
+    right:15px;
+    opacity:0;
+}
+
+.form-control em{
+    color:hsl(0, 100%, 74%);
+    text-align: right;
+    position: absolute;
+    bottom: -5px;
+    right:0;
+    font-size: 12px;
+}
+
+
+@media  screen and (max-width:768px) {
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    body{
+     overflow: scroll;
+    }
+    
+}
